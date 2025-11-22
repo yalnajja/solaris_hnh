@@ -1627,5 +1627,19 @@ public class JSHaven {
 	public static int jGetStatTotalByName(String name) {
 		return JSBotUtils.getStatTotal(name);
 	}
+
+	public static int jGetNumenCount(){
+		return CharWnd.ancw.getNumenCount();
+	}
+
+	public static String jGetWish(int k){
+		for (Widget i = CharWnd.ancw.wishes[k].child; i != null; i = i.next) {
+			if (i instanceof Item) {
+				Item buf = (Item) i;
+				return buf.GetResName();
+			}
+		}
+		return "";
+	}
 	
 }//Static haven
