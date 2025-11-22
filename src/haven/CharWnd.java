@@ -36,7 +36,7 @@ import java.util.*;
 
 public class CharWnd extends Window {
 	Widget cattr, skill, belief;
-	Worship ancw;
+	public static Worship ancw;
 	Label cost, skcost;
 	Label explbl;
 	int exp;
@@ -552,10 +552,11 @@ public class CharWnd extends Window {
 		}
 	}
 
-	private class Worship extends Widget {
-		Inventory[] wishes = new Inventory[3];
+	public class Worship extends Widget {
+		public Inventory[] wishes = new Inventory[3];
 		Text title, numen;
 		Tex img;
+		int numenCount;
 
 		public Worship(Coord c, Widget parent, String title, Tex img) {
 			super(c, new Coord(100, 200), parent);
@@ -591,6 +592,11 @@ public class CharWnd extends Window {
 
 		public void numen(int n) {
 			this.numen = Text.render(Integer.toString(n));
+			this.numenCount = n;
+		}
+
+		public int getNumenCount(){
+			return this.numenCount;
 		}
 	}
 

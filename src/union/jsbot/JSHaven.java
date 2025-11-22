@@ -3,13 +3,16 @@ package union.jsbot;
 import haven.Audio;
 import haven.BuddyWnd;
 import haven.Charlist;
+import haven.CharWnd;
 import haven.Coord;
+import haven.Item;
 import haven.LoginScreen;
 import haven.MainFrame;
 import haven.Music;
 import haven.Partyview;
 import haven.Resource;
 import haven.UI;
+import haven.Widget;
 import haven.Window;
 
 import java.io.BufferedReader;

@@ -7,7 +7,7 @@
 		<mkdir dir="build" />
 		<mkdir dir="classes" />
 		<mkdir dir="classes/haven" />
-		<javac srcdir="src" destdir="classes" debug="on" encoding="UTF-8" source="1.5" target="1.5" includeantruntime="no">
+		<javac srcdir="src" destdir="classes" debug="on" encoding="UTF-8" source="1.8" target="1.8" includeantruntime="no">
 			<classpath>
 				<pathelement path="lib/jogl.jar" />
 				<pathelement path="lib/gluegen-rt.jar" />

@@ -1,0 +1,15 @@
+//#! name = Test Numen
+//#! uniq = testNumen
+//#! tooltip = Test Numen
+
+
+
+function main(){
+	sayArea("Numen Count = " + jGetNumenCount())
+	jSleep(1000);
+	for(var k = 0; k < 3; k++){
+		sayArea("Wish " + k + ": " + jGetWish(k) )
+	}
+}
+
+main();
